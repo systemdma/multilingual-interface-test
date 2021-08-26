@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 def test_exist_basket_button(browser, get_choose_language):
     lang = get_choose_language
     if lang is None:
-        raise ValueError("Not set language")
+        raise ValueError("Unset language")
     else:
         url = f"http://selenium1py.pythonanywhere.com/{lang}/catalogue/coders-at-work_207/"
         browser.get(url)
